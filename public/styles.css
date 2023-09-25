@@ -1,0 +1,127 @@
+/* 全体のスタイリング */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  /* ヘッダー */
+  header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 1em;
+  }
+  
+  /* 新しいdivのスタイリング */
+  .content-wrapper {
+    text-align: center;
+  }
+  
+  /* メインコンテンツ */
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 2em - 32px);
+  }
+  
+  /* フォームを中央に配置 */
+  .center-form {
+    width: 400px;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  /* 各入力フィールドを囲む枠 */
+  .autocomplete {
+    position: relative;
+    background-color: #C0C0C0;
+    border: 2px solid #ccc;  /* 枠線を追加 */
+    border-radius: 8px;  /* 角を丸くする */
+    margin-bottom: 20px;  /* 下方向のマージンを追加 */
+    padding: 16px;  /* パディングを追加 */
+  }
+  
+  /* サジェスチョンボックス */
+  .suggestions {
+    position: absolute;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-top: none;
+    z-index: 99;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .suggestions div {
+    cursor: pointer;
+    background-color: #fff;
+    padding: 12px 16px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .suggestions div:last-child {
+    border-bottom: none;
+  }
+  
+  .suggestions div:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* インストラクションとフォームのスタイリング */
+  .instruction {
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+  }
+  
+  /* フォームのスタイリング */
+  #userForm {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    clear: both;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 入力フィールドのスタイリング */
+  input[type="text"] {
+    width: 100%;
+    padding: 16px;
+    font-size: 18px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Submitボタンのスタイリング */
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 16px 24px;
+    font-size: 18px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin-top: 100px;  /* 上方向のマージンを100pxに設定 */
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  

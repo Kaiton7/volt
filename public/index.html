@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>VOLT</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>VOLT</h1>
+    <p>GCPの権限を一時的に付与できます</p>
+  </header>
+  <main>
+    <div class="content-wrapper">
+    
+    <form id="userForm" class="center-form">
+        <div class="autocomplete">
+            <div class="instruction">
+                Google アカウント、サービスアカウント
+              </div>
+          <input type="text" id="username" placeholder="Username" oninput="autocompleteAndValidate('username')">
+          <div id="usernameSuggestions" class="suggestions"></div>
+        </div>
+        <div class="autocomplete">
+            <div class="instruction">
+                GCP Project
+              </div>
+          <input type="text" id="project" placeholder="Project" oninput="autocompleteAndValidate('project')">
+          <div id="projectSuggestions" class="suggestions"></div>
+        </div>
+        <div class="autocomplete">
+            <div class="instruction">
+                欲しい権限
+              </div>
+          <input type="text" id="role" placeholder="Role" oninput="autocompleteAndValidate('role')">
+          <div id="roleSuggestions" class="suggestions"></div>
+        </div>
+        <button id="submitButton" disabled>Submit</button>
+      </form>
+</div>
+  </main>
+</body>
+</html>
