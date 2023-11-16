@@ -1,7 +1,28 @@
 const data = {
     usernames:  ['Ben', 'Kaito', 'Risa', 'K9T', 'K2T', 'K1T', 'KcT', 'KaT', 'KdT','Tony', 'Sindy'],
     projects: ['Project1', 'Project2', 'Project3'],
-    roles: ['Admin', 'User', 'Guest']
+    roles: [
+      "roles/viewer",
+      "roles/editor",
+      "roles/owner",
+      "roles/iam.securityAdmin",
+      "roles/iam.securityReviewer",
+      "roles/iam.securityCenterAdmin",
+      "roles/storage.admin",
+      "roles/storage.objectViewer",
+      "roles/storage.objectCreator",
+      "roles/compute.viewer",
+      "roles/compute.admin",
+      "roles/appengine.admin",
+      "roles/cloudfunctions.developer",
+      "roles/cloudsql.admin",
+      "roles/cloudkms.admin",
+      "roles/iam.roleAdmin",
+      "roles/iam.roleViewer",
+      "roles/iam.roleEditor",
+      "roles/monitoring.viewer",
+      "roles/monitoring.admin"
+    ]
   };
   
   function autocompleteAndValidate(field) {
